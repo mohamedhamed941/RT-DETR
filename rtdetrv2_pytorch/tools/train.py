@@ -55,9 +55,9 @@ if __name__ == '__main__':
                        help='exp reproducibility')
     parser.add_argument('--use-amp', action='store_true', default=False,
                        help='auto mixed precision training')
-    parser.add_argument('--output-dir', type=str, default=None,
+    parser.add_argument('--output-dir', type=str, default="./outputs",
                        help='output directoy')
-    parser.add_argument('--summary-dir', type=str, default=None,
+    parser.add_argument('--summary-dir', type=str, default='./logs',
                        help='tensorboard summry')
     parser.add_argument('--test-only', action='store_true', default=False,
                        help='test only mode')
